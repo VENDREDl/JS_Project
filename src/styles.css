@@ -1,0 +1,314 @@
+/* @import "reset.css"; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+#element::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.stop-dragging{
+    -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sec{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 820px;
+    height: 1120px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px -5px;
+    background-color:#333333;
+    z-index: -10;
+}
+
+
+.header{
+    background-color: lightgray;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    border-radius: 30px;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.header p {
+    text-align: center;
+    line-height: 15px;
+    font-size: 15px;
+    
+}
+
+.section {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 768px;
+    height: 1024px;
+    border: 1px solid black;
+    z-index: 1;
+    background-color: white;
+}
+
+.mileage {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    
+}
+
+.phone {
+    position: absolute;
+    top: 250px;
+    left: 147px;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+
+button {
+    width: 55px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    height: 30px;
+    font-size: 15px;
+}
+
+.keypad{
+    position: absolute;
+    top: 60px;
+    left: 130px; 
+    z-index: 3;
+    font-weight: 500;
+    
+}
+
+.keypad_table{
+    background-color: gray;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+
+td{
+    left: 0px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 197px;
+    height: 40px;
+    
+}
+
+
+.appear{
+    opacity: 100%;
+}
+
+.disappear{
+    opacity: 0%;
+    z-index: -10;
+}
+
+#back{
+    position: absolute;
+    top: -10px;
+    left: 140px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;;
+    border-radius: 20px;;
+    background-color: green;
+    z-index: 1;
+}
+
+.admin {
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    position: relative;
+    top: 520px;
+    left: 60px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.t1{
+    position: fixed;
+    border-collapse: collapse;
+}
+
+.t2{
+    position: fixed;
+    overflow-y: auto;
+    border-collapse: collapse;
+}
+
+.t3{
+    display: block;
+    position: fixed;
+    border-collapse: collapse;
+    height: 300px;
+    width: 200px;
+    
+}
+
+
+tr, td{
+    background-color: lightgray;
+}
+
+.t1:nth-child(1){
+    background-color: white;
+}
+
+.admin_{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    overflow: auto;
+}
+
+.admin_detail{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 270px;
+    overflow: auto;
+
+}
+
+.admin_detail2{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: 101px;
+    left: 470px;
+    
+
+}
+
+.admin_detail2 td{
+    font-size: 14px;
+}
+
+#resetbtn{
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+    position: absolute;
+    left: 40px;
+    bottom: 380px;
+    font-size: 20px;
+}
+
+.clicked{
+    background-color: yellow;
+}
+
+.cb{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 388px;
+    border-radius: 50px;
+    border: 2px solid gray;
+    z-index: 1;
+}
+
+.cb1{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: gray;
+    border-radius: 50px;
+    bottom: 16.8px;
+    left: 395px;
+}
+
+.adminbtn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    font-size: 30px;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.disappearAdmin{
+    opacity: 0%;
+}
+
+.appearAdmin{
+    opacity: 100%;
+}
+
+.btn-design{
+    background-color: rgba(0,0,0,0);
+    color: skyblue;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.btn-design:hover {
+    color: white;
+    background-color: skyblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-design1:hover{
+    color: white;
+    background-color: gray;;
+}
+
+#myTbody, #myTbody2, #myTbody3{
+    display: block;
+    width: 200px;
+    height: 300px;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+#myTbody::-webkit-scrollbar{
+    display: none;
+}
+#myTbody2::-webkit-scrollbar{
+    display: none;
+}
+#myTbody3::-webkit-scrollbar{
+    display: none;
+}
